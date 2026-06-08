@@ -6,15 +6,13 @@ def create_app():
     
     # Soporte para PostgreSQL en Render y SQLite en local
     db_url = os.environ.get('DATABASE_URL', 'sqlite:///estudiantes.db')
-    
-    # MODIFICACIÓN AQUÍ: Cambiamos postgres:// a postgresql+psycopg://
     if db_url.startswith("postgres://"):
-        db_url = db_url.replace("postgres://", "postgresql+psycopg://", 1)
+          db_url = db_url.replace("postgres://", "postgresql+psycopg://", 1)
         
     app.config['SQLALCHEMY_DATABASE_URI'] = db_url
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-    from src.models import bd
+    from models import bd
     bd.init_app(app)
 
     with app.app_context():

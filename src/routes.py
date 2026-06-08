@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request, redirect, url_for
-from models import bd, Estudiante
+from src.models import bd, Estudiante
 
 estudiantes_bp = Blueprint('estudiantes', __name__,url_prefix='/estudiantes')
 

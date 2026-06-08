@@ -1,7 +1,5 @@
+from src.app import create_app  # <-- Asegúrate de que tenga el "src." adelante
 
-from src.app import create_app
-
-# Esto busca un archivo llamado .env en la raíz y carga sus variables
 from dotenv import load_dotenv
 load_dotenv() 
 

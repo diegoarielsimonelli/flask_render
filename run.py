@@ -1,5 +1,4 @@
-from src.app import create_app  # <-- Asegúrate de que tenga el "src." adelante
-
+from src.app import create_app  
 from dotenv import load_dotenv
 load_dotenv() 
 

@@ -12,13 +12,13 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = db_url
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-    from models import bd
+    from src.models import bd
     bd.init_app(app)
 
     with app.app_context():
         bd.create_all()
 
-    from routes import estudiantes_bp
+    from src.routes import estudiantes_bp
     app.register_blueprint(estudiantes_bp)
 
     return app

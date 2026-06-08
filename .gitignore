@@ -1,0 +1,26 @@
+# Entornos virtuales (Evita subir megabytes de librerías instaladas)
+venv/
+.venv/
+env/
+ENV/
+
+# Archivos de configuración local y secretos (¡Crucial!)
+.env
+.flaskenv
+
+# Caché de Python
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Bases de datos locales (Evita sobreescribir tu DB de producción o subir datos de prueba)
+*.db
+*.sqlite3
+
+# Archivos del sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

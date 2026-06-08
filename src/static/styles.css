@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f4f4f9;
+  color: #333;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+}
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+th {
+  background-color: #007bff;
+  color: white;
+}
+.btn {
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary {
+  background: #28a745;
+}
+.btn-danger {
+  background: #dc3545;
+}
+.btn-secondary {
+  background: #6c757d;
+}
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}

@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 from src.models import bd, Estudiante
 
-estudiantes_bp = Blueprint('estudiantes', __name__,url_prefix='/estudiantes')
+estudiantes_bp = Blueprint('estudiantes', __name__)
 
 # Leer todos (Ver info)
 @estudiantes_bp.route('/')
